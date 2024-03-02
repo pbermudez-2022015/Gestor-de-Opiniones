@@ -1,0 +1,305 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorOpiniones",
+    "dateExported": "2024-03-01T23:49:28.931Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "ae70e3a6-a244-4c0f-a1d1-e43c822d82e1",
+            "name": "CrudUser",
+            "containerId": "",
+            "created": "2024-03-01T21:27:12.189Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "8b3c4ae6-2375-491c-ac97-142f4d39a154",
+            "name": "CrudPublicaciones",
+            "containerId": "",
+            "created": "2024-03-01T21:27:40.905Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "63c6a3e9-8b26-412b-aedf-fdb12af1cc2b",
+            "name": "CrudComentarios",
+            "containerId": "",
+            "created": "2024-03-01T21:29:01.946Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "eb9fc3d9-eac5-4fd2-9bf7-d9129fb6a284",
+            "colId": "13ea178c-5b8c-43ee-91ba-f159a5155f0f",
+            "containerId": "ae70e3a6-a244-4c0f-a1d1-e43c822d82e1",
+            "name": "RegisterUser",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T21:29:17.677Z",
+            "modified": "2024-03-01T23:30:35.747Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "santiago"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "lopez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "slopez@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "role",
+                        "value": "USER"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f7919eba-36f2-4f54-9cfb-dfa2b27eaff6",
+            "colId": "13ea178c-5b8c-43ee-91ba-f159a5155f0f",
+            "containerId": "ae70e3a6-a244-4c0f-a1d1-e43c822d82e1",
+            "name": "Login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-01T21:38:46.574Z",
+            "modified": "2024-03-01T21:47:06.833Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "identifier",
+                        "value": "pchito@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "555b3086-b0f1-43d2-96da-ca3b5afb426b",
+            "colId": "13ea178c-5b8c-43ee-91ba-f159a5155f0f",
+            "containerId": "ae70e3a6-a244-4c0f-a1d1-e43c822d82e1",
+            "name": "UpdateUser",
+            "url": "/user/update/65e1b95bc60fa2e6d0af9aef",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-01T21:39:10.098Z",
+            "modified": "2024-03-01T23:25:03.732Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxYjk1YmM2MGZhMmU2ZDBhZjlhZWYiLCJ1c2VybmFtZSI6InBhbmNoaXRvIiwibmFtZSI6InBhbmNobyIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzA5MzI5NjI3LCJleHAiOjE3MDkzNDA0Mjd9.ymH5My4-tigVwzVldgCuNwne7-XP6w4bvzPdjWRTQDQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Juanito",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "oldPassword",
+                        "value": ""
+                    },
+                    {
+                        "name": "newPassword",
+                        "value": "87654321"
+                    },
+                    {
+                        "name": "password",
+                        "value": "",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "64e8a0e6-a54b-4a3f-ad2c-83e6c75973ac",
+            "colId": "13ea178c-5b8c-43ee-91ba-f159a5155f0f",
+            "containerId": "8b3c4ae6-2375-491c-ac97-142f4d39a154",
+            "name": "SavePublicacion",
+            "url": "/publicacion/save",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-01T23:37:54.751Z",
+            "modified": "2024-03-01T23:46:08.829Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxYjk1YmM2MGZhMmU2ZDBhZjlhZWYiLCJ1c2VybmFtZSI6InBhbmNoaXRvIiwibmFtZSI6InBhbmNobyIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzA5MzI5NjI3LCJleHAiOjE3MDkzNDA0Mjd9.ymH5My4-tigVwzVldgCuNwne7-XP6w4bvzPdjWRTQDQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "titulo",
+                        "value": "Alegria"
+                    },
+                    {
+                        "name": "categoria",
+                        "value": "Guerra"
+                    },
+                    {
+                        "name": "texto",
+                        "value": "Hoy estamos en guerra"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0432fd76-2add-40f8-b9f9-945a54278da0",
+            "colId": "13ea178c-5b8c-43ee-91ba-f159a5155f0f",
+            "containerId": "8b3c4ae6-2375-491c-ac97-142f4d39a154",
+            "name": "UpdatePublicacion",
+            "url": "/publicacion/update/65e268c299e9883df47647b2",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-01T23:38:34.320Z",
+            "modified": "2024-03-01T23:46:37.508Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxYjk1YmM2MGZhMmU2ZDBhZjlhZWYiLCJ1c2VybmFtZSI6InBhbmNoaXRvIiwibmFtZSI6InBhbmNobyIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzA5MzI5NjI3LCJleHAiOjE3MDkzNDA0Mjd9.ymH5My4-tigVwzVldgCuNwne7-XP6w4bvzPdjWRTQDQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "Titulo",
+                        "value": "Llorar"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "043e15c3-e41c-4928-8f3f-f56785309521",
+            "colId": "13ea178c-5b8c-43ee-91ba-f159a5155f0f",
+            "containerId": "8b3c4ae6-2375-491c-ac97-142f4d39a154",
+            "name": "DeletedPublicacion",
+            "url": "/delete/65e268c299e9883df47647b2",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-01T23:38:47.363Z",
+            "modified": "2024-03-01T23:47:01.653Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxYjk1YmM2MGZhMmU2ZDBhZjlhZWYiLCJ1c2VybmFtZSI6InBhbmNoaXRvIiwibmFtZSI6InBhbmNobyIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzA5MzI5NjI3LCJleHAiOjE3MDkzNDA0Mjd9.ymH5My4-tigVwzVldgCuNwne7-XP6w4bvzPdjWRTQDQ"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "da33f0ce-e76a-4f2b-811a-1315c22bff4b",
+            "colId": "13ea178c-5b8c-43ee-91ba-f159a5155f0f",
+            "containerId": "ae70e3a6-a244-4c0f-a1d1-e43c822d82e1",
+            "name": "DeletedNoUser",
+            "url": "",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-03-01T23:39:21.065Z",
+            "modified": "2024-03-01T23:39:21.065Z",
+            "headers": []
+        },
+        {
+            "_id": "1dc5070a-117f-46b9-8ee0-283a4d5783f7",
+            "colId": "13ea178c-5b8c-43ee-91ba-f159a5155f0f",
+            "containerId": "63c6a3e9-8b26-412b-aedf-fdb12af1cc2b",
+            "name": "SaveComentario",
+            "url": "/comentario/save",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-03-01T23:47:25.001Z",
+            "modified": "2024-03-01T23:48:22.571Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "92692ed0-a5a7-414d-a326-6ff53fff4fdb",
+            "colId": "13ea178c-5b8c-43ee-91ba-f159a5155f0f",
+            "containerId": "63c6a3e9-8b26-412b-aedf-fdb12af1cc2b",
+            "name": "UpdateComentario",
+            "url": "/comentario/update/",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-03-01T23:47:52.063Z",
+            "modified": "2024-03-01T23:48:09.107Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "85a7c2be-892f-4467-9420-ebc582bc01e5",
+            "colId": "13ea178c-5b8c-43ee-91ba-f159a5155f0f",
+            "containerId": "63c6a3e9-8b26-412b-aedf-fdb12af1cc2b",
+            "name": "DeletedComentario",
+            "url": "/comentario/deleted/",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-03-01T23:48:46.318Z",
+            "modified": "2024-03-01T23:49:01.277Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://localhost:2656"
+        }
+    }
+}
